@@ -10,6 +10,7 @@ public class SpawnTires : MonoBehaviour
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
     
+    
 
    
     void Start()
@@ -17,10 +18,10 @@ public class SpawnTires : MonoBehaviour
         
         InvokeRepeating("spawnTire", startDelay, spawnInterval);
 
-       
+        
     }
 
-
+    
 
     void spawnTire()
     {
@@ -29,5 +30,7 @@ public class SpawnTires : MonoBehaviour
         Instantiate(tire, this.transform.position, tire.transform.rotation);
         
     }
+
+   
 
 }
